@@ -33,25 +33,20 @@ public class ImageAdater extends BaseAdapter {
 		context = c;
 	}
 
-	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
 		return data.size();
 	}
 
-	@Override
 	public Object getItem(int position) {
-		// TODO Auto-generated method stub
 		return position;
 	}
 
-	@Override
 	public long getItemId(int position) {
 		// TODO Auto-generated method stub
 		return position;
 	}
 
-	@Override
 	public View getView(final int position, View convertView, ViewGroup parent) {
 		// TODO Auto-generated method stub
 		convertView = myInflater.inflate(item, null);

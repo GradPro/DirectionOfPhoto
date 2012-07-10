@@ -5,12 +5,21 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
- <com.google.android.maps.MapView
+    <!--
+       <com.google.android.maps.MapView
         android:id="@+id/mapView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:clickable="true"
         android:apiKey="0B2dFvG6VJPOWGzsDkodbeGrDhOXLHSTcYHUp4g" />
+    -->
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="0B2dFvG6VJPPmHnOgYVJJTh9TQ0rlepvlAAHUNg"
+        android:clickable="true" />
 
     <LinearLayout
         android:id="@+id/zoomView"
@@ -35,8 +44,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:textColor="#000000"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="#000000" />
 
     <TextView
         android:id="@+id/l2"

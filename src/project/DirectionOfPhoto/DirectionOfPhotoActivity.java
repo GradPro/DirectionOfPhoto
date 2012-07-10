@@ -49,7 +49,6 @@ public class DirectionOfPhotoActivity extends Activity {
 				// 設定LISTENER
 				lv.setOnItemClickListener(new OnItemClickListener() {
 
-					@Override
 					public void onItemClick(AdapterView<?> arg0, View arg1,
 							int arg2, long arg3) {
 
@@ -94,7 +93,6 @@ public class DirectionOfPhotoActivity extends Activity {
 					.setNegativeButton("取消", null)
 					.setPositiveButton("確定",
 							new DialogInterface.OnClickListener() {
-								@Override
 								public void onClick(DialogInterface dialog,
 										int which) {
 									finish();

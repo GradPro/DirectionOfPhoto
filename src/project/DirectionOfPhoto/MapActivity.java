@@ -151,7 +151,6 @@ public class MapActivity extends com.google.android.maps.MapActivity implements
 					.setNegativeButton("¨ú®ø", null)
 					.setPositiveButton("½T©w",
 							new DialogInterface.OnClickListener() {
-								@Override
 								public void onClick(DialogInterface dialog,
 										int which) {
 									finish();
@@ -162,7 +161,6 @@ public class MapActivity extends com.google.android.maps.MapActivity implements
 		return super.onOptionsItemSelected(item);
 	}
 
-	@Override
 	public boolean onTouch(View v, MotionEvent event) {
 		Switch edit = (Switch) findViewById(R.id.edit);
 		if (edit.isChecked() && event.getAction() == MotionEvent.ACTION_UP
