@@ -1,20 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" 
-    android:id="@+id/mainlayout">
-    <com.google.android.maps.MapView
+    android:orientation="vertical" >
+
+ <com.google.android.maps.MapView
         android:id="@+id/mapView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:clickable="true"
-        android:apiKey="0B2dFvG6VJPPmHnOgYVJJTh9TQ0rlepvlAAHUNg" />
-    <LinearLayout 
+        android:apiKey="0B2dFvG6VJPOWGzsDkodbeGrDhOXLHSTcYHUp4g" />
+
+    <LinearLayout
         android:id="@+id/zoomView"
-        android:layout_alignBottom="@id/mapView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"/>
+        android:layout_alignBottom="@id/mapView"
+        android:layout_centerHorizontal="true" />
+
+    <Switch
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/zoomView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Edit"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#000000"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/l1"
+        android:layout_marginTop="14dp"
+        android:text="TextView"
+        android:textColor="#000000" />
 
 </RelativeLayout>

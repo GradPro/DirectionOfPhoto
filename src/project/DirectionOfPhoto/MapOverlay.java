@@ -13,20 +13,31 @@ public class MapOverlay extends ItemizedOverlay<OverlayItem> {
 
 	private ArrayList<OverlayItem> gList = new ArrayList<OverlayItem>();
 	Drawable marker;
+
 	public MapOverlay(Drawable defaultMarker) {
 		super(defaultMarker);
 		marker = defaultMarker;
 	}
-	public void addOverlayItem(OverlayItem oItem){
+
+	public void addOverlayItem(OverlayItem oItem) {
 		gList.add(oItem);
 		populate();
 	}
+
 	@Override
 	public void draw(Canvas canvas, MapView mapView, boolean shadow) {
 		super.draw(canvas, mapView, shadow);
 		boundCenterBottom(marker);
 	}
 
+	public void removeOverlay(OverlayItem overlay) {
+		gList.remove(overlay);
+		populate();
+	}
+	public void clear() {
+        gList.clear();
+        populate();
+    }
 
 	@Override
 	protected OverlayItem createItem(int arg0) {

@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:descendantFocusability="blocksDescendants"
     android:gravity="center" >
-
+    <!--
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/star_big_off" />
+    -->
     <ImageView
         android:id="@+id/image"
         android:layout_width="wrap_content"
@@ -14,9 +20,17 @@
         android:clickable="true"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:maxHeight="500dp"
-        android:maxWidth="500dp"
+        android:maxWidth="300dp"
         android:padding="0dp"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/ic_launcher"
+        android:layout_margin="10dp" />
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/image"
+        android:layout_centerVertical="true"
+        android:src="@android:drawable/star_big_off" />
+
+</RelativeLayout>

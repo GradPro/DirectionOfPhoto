@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/data"
+        android:title="Data">
+        <menu>
+            <item
+                android:id="@+id/save"
+                android:icon="@android:drawable/ic_menu_save"
+                android:title="Save" android:alphabeticShortcut="s">
+            </item>
+            <item
+                android:id="@+id/load"
+                android:icon="@android:drawable/ic_menu_revert"
+                android:title="Load" android:alphabeticShortcut="l">
+            </item>
+            <item
+                android:id="@+id/clear"
+                android:icon="@android:drawable/ic_menu_delete"
+                android:title="Clear" android:alphabeticShortcut="c">
+            </item>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/quit"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="結束">
+    </item>
+
+</menu>
